@@ -22,6 +22,7 @@ default = ["public_suffix"]
 preserve_order = ["indexmap"]
 public_suffix = ["publicsuffix"]
 wasm-bindgen = ["time/wasm-bindgen"]
+save_all_cookies = []
 
 # Enable logging the values of cookies marked 'secure', off by default as values may be sensitive
 log_secure_cookie_values = []
