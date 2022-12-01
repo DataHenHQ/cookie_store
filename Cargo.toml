@@ -25,6 +25,7 @@ preserve_order = ["dep:indexmap"]
 public_suffix = ["dep:publicsuffix"]
 ## Enables transitive feature `time/wasm-bindgen`; necessary in `wasm` contexts.
 wasm-bindgen = ["time/wasm-bindgen"]
+save_all_cookies = []
 
 ## Enable logging the values of cookies marked 'secure', off by default as values may be sensitive
 log_secure_cookie_values = []

@@ -371,6 +371,9 @@ impl CookieStore {
             if c.is_persistent() {
                 Some(cookie_to_string(c))
             } else {
+                #[cfg(feature = "save_all_cookies")]
+                return Some(cookie_to_string(c));
+                #[cfg(not(feature = "save_all_cookies"))]
                 None
             }
         }) {
